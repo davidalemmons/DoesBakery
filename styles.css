@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    background-color: #0C1C29;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    background-color: dark;
+    font-size: 32px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: 100ms ease-in-out;
+    
+}
+
+a:hover{
+    font-size: 40px;
+    transition: 100ms ease-in-out;
+}
+
+li{
+    list-style: none;
+}
+
+#hero{
+    background-image: url(assets/Doe\'s\ Bakery\ Storefront.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#herotext{
+    color: white;
+    text-shadow: 2px 2px 0px #000000,
+    -1px -1px 0px #000000;
+    font-size: 64px;
+    margin-right: 50%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 64px;
+    padding: 4%;
+}
+
+#specialitems{
+    display: flex;
+    justify-content: space-between;
+    padding: 36px;
+    padding-bottom: 16vh;
+}
+
+#specialitem{
+    background-color: #0C1C29;
+    width: 20%;
+    border-radius: 6%;
+}
+
+#sitemimg{
+    width: 85%;
+    padding: 10%;
+    border-radius: 15%;
+}
+
+#itemtext{
+    color: white;
+    padding: 10%;
+    font-size: 32px;
+}
+
+footer{
+    background-color: #0C1C29;
+    color: white;
+    height: 10vh;
+    padding: 2%;
+}
+
+p{
+    display: flex;justify-content: center;
+    font-size: 24px;
+}
+
+#mediatags{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+#about{
+    background-image: url(assets/Interior.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 84px;
+    color: white;
+    text-shadow: 2px 2px 0px #000000,
+    -1px -1px 0px #000000;
+}
+
+#aboutText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+#aboutp{
+    font-size: 50px;
+    padding-right: 60px;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 64px;
+}
+
+.card {
+    width: 70%;
+    padding: 30px 90px 90px 90px;
+    border: 6px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    position: relative;
+}
+
+.card h2 {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.card .row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid: auto / auto auto;
+    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+    grid-gap: 30px;
+}
+
+.card .row .col {
+    position: relative;
+    width: 100%;
+    margin: 30px 20px 40px 0;
+    transition: 0.5s;
+}
+
+.card .row .form-group {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+}
+
+.card .row .form-group input,
+.card .row .form-group textarea {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 0 10px 20px;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border-radius: 50px;
+}
+
+.card .row .form-group label {
+    line-height: 40px;
+    color: #0C1C29;
+    font-size: 24px;
+    margin: 0 0 0 30px;
+    display: block;
+    pointer-events: none;
+}
+
+.row .col:nth-child(6) {
+    margin-top: 64px;
+}
+
+.card .row .form-group input:focus,
+.card .row .form-group textarea:focus {
+    border: 5px solid #ffffff;
+    transition: all 0.5s;
+}
+
+.card .row input[type="submit"] {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+    color: #0C1C29;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 45px;
+    transition: all 0.4s;
+}
+
+.card .row input[type="submit"]:hover {
+    border: 5px solid rgba(255, 255, 255, 1);
+    color: #ffffff;
+    transition: all 0.4s;
+}
+
+@media screen and (max-width: 900px) {
+    .card .row {
+    grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
+    }
+    
+    .card {
+    padding: 20px;
+    }
+    
+    .card h2 {
+    font-size: 34px;
+    }
+    
+    .card .row input[type="submit"] {
+    width: 100%;
+    }
+}
+
+#map{
+    padding: 64px;
+}
+
+#products{
+    background-image: url(assets/bakedproducts.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#productheading{
+    color: white;
+    text-shadow: 2px 2px 0px #000000,
+    -1px -1px 0px #000000;
+    font-size: 64px;
+}
+
+#itemrow{
+    display: flex;
+}
+
+#itemimg img{
+    width: 85%;
+    padding: 10%;
+    border-radius: 15%;
+}
+
+#itemcard{
+    background-color: #0C1C29;
+    margin: 8%;
+    border-radius: 6%;
+}
+
+#itemname,
+#itemdesc,
+#price{
+    color: white;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#price{
+    padding-bottom: 10px;
+}
